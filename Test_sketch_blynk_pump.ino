@@ -85,8 +85,8 @@ void readSendData() {
   Serial.println(soil_hum);
   Serial.print("Light = ");
   Serial.println(light);
-  Blynk.virtualWrite(V3, light); delay(25);          // Отправка данных на сервер Blynk
-  Blynk.virtualWrite(V4, soil_hum); delay(25);       // Отправка данных на сервер Blynk
+  Blynk.virtualWrite(V4, light); delay(25);          // Отправка данных на сервер Blynk
+  Blynk.virtualWrite(V3, soil_hum); delay(25);       // Отправка данных на сервер Blynk
 }
 
 // Управление освещением с Blynk
