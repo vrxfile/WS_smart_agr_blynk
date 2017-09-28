@@ -89,7 +89,7 @@ void readSendData() {
   Blynk.virtualWrite(V3, soil_hum); delay(25);       // Отправка данных на сервер Blynk
 }
 
-// Управление освещением с Blynk
+// Управление помпой с Blynk
 BLYNK_WRITE(V5)
 {
   int pump_ctl = param.asInt();   // Получение управляющего сигнала с сервера
