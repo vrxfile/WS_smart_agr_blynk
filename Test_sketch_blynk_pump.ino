@@ -73,7 +73,7 @@ void readSendData() {
   Blynk.virtualWrite(V0, air_temp); delay(25);        // Отправка данных на сервер Blynk
   Blynk.virtualWrite(V1, air_hum); delay(25);         // Отправка данных на сервер Blynk
 
-  ds_sensor1.requestTemperatures();                   // Считывание температуры воздуха
+  ds_sensor1.requestTemperatures();                   // Считывание температуры почвы
   float soil_temp = ds_sensor1.getTempCByIndex(0);
   Serial.print("Soil temperature = ");
   Serial.println(soil_temp);
